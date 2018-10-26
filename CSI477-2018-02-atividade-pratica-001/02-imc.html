@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>IMC</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<head>
+  <meta charset="utf-8">
+  <title>IMC</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-  </head>
-  <body>
-  
-  </body>
+  <script src="jquery-3.3.1.js"></script>
+  <script src="02-imc.js"></script>
+
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h1>IMC</h1>
+    <p id="subtitulo">Verificção do índice de massa corporal</p>
+  </div>
+
+  <form id="dados" name="dados" class="container">
+
+
+    <div class="form-row">
+      <div class="col">
+        <input type="number" nome="peso" id="peso" placeholder="Peso (kg  )"  class="form-control">
+      </div>
+      <div class="col">
+        <input type="number"  nome="altura"  id="altura" placeholder="Altura(m)" class="form-control">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" name="verificar"  id="verificar" value="Verificar">
+      </div>
+    </div>
+
+    <p></p>
+    <p></p>
+    <table id="tabela" style="display:none;" class="table table-bordered table-striped table-hover">
+      <!-- Cabeçalho //-->
+      <thead class="thead-light">
+        <tr>
+          <th>Imc</th>
+          <th>Classificação</th>
+          <th>Peso mínimo ideal</th>
+          <th>Peso máximo ideal</th>
+
+        </tr>
+      </thead>
+      <!-- Dados //-->
+      <tbody id="tbody">
+      </tbody>
+    </table>
+
+
+  </form>
+
+</body>
 </html>
