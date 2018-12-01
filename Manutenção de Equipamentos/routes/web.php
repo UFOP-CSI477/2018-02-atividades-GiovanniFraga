@@ -14,6 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('pesquisaRegistros', function () {
+    return view('pesquisaRegistros');
+});
+Route::get('pesquisaRegistrosBd', 'RegistrosController@pesquisa');
+
+
 Route::get('geral', function () {
     return view('geral');
 });

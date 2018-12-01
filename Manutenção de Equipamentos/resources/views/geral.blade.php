@@ -75,7 +75,7 @@
         <a href="inserirEquipamentos">Inclusão de Equipamentos</a>
         <a href="inserirRegistros">Inclusão de Manutenções</a>
         <a href="equipamento/index">Relatorio</a>
-        <a href="#">Pesquisa</a>
+        <a href="pesquisaRegistros">Pesquisa</a>
 
 
       </div>
