@@ -51,7 +51,7 @@
       .links > a {
         color: #636b6f;
         padding: 0 25px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 600;
         letter-spacing: .1rem;
         text-decoration: none;
@@ -72,7 +72,7 @@
 
           <div class="links">
             <a href="geral">Área do Adiministrador</a>
-            <a href="registro/index">Área Geral</a>
+            <a href="registroIndex">Área Geral</a>
 
           </div>
         </div>

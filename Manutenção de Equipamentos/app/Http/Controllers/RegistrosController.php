@@ -31,7 +31,7 @@ class RegistrosController extends Controller
       $registro->tipo            = $request->tipo;
       $registro->datalimite      = $request->datalimite;
       $registro->save();
-      return redirect('registro/index');
+      return redirect('registroIndex');
   }
 
 

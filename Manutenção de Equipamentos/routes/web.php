@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('pesquisaRegistros', function () {
     return view('pesquisaRegistros');
 });
@@ -36,5 +37,5 @@ Route::get('inserirRegistros', function () {
 Route::post('inserirRegistrosBd', 'RegistrosController@store');
 
 
-Route::get('registro/index', 'RegistrosController@index');
-Route::get('equipamento/index', 'EquipamentosController@index');
+Route::get('registroIndex', 'RegistrosController@index');
+Route::get('equipamentoIndex', 'EquipamentosController@index');

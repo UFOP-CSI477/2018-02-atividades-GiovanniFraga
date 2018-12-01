@@ -21,7 +21,7 @@ class EquipamentosController extends Controller
       $equipamentos = new Equipamentos;
       $equipamentos->nome  = $request->nome;
       $equipamentos->save();
-      return redirect('equipamento/index');
+      return redirect('equipamentoIndex');
   }
 
 }

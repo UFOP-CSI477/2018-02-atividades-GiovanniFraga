@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Laravel</title>
+  <title>Area Geral</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -51,7 +51,7 @@
   .links > a {
     color: #636b6f;
     padding: 0 25px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
@@ -74,7 +74,7 @@
         <a href="/">Home</a>
         <a href="inserirEquipamentos">Inclusão de Equipamentos</a>
         <a href="inserirRegistros">Inclusão de Manutenções</a>
-        <a href="equipamento/index">Relatorio</a>
+        <a href="equipamentoIndex">Relatorio</a>
         <a href="pesquisaRegistros">Pesquisa</a>
 
 
