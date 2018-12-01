@@ -15,15 +15,13 @@ class CreateRegistros extends Migration
     {
         Schema::create('registros', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('equipamentos_id')->unsigned();
-            $table->foreign('equipamentos_id')->references('id')->on('equipamentos');
+            $table->integer('equipamento_id')->unsigned();
+            $table->foreign('equipamento_id')->references('id')->on('equipamentos');
             $table->string('descricao', 191);
             $table->date('datalimite');
             $table->integer('tipo');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
-
-
         });
     }
 

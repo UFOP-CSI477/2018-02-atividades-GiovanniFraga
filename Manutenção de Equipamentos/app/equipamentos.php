@@ -4,7 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class equipamentos extends Model
+class Equipamentos extends Model
 {
-    //
+  protected $fillable = ['nome'];
+  protected $guarded = ['id','created_at', 'update_at'];
+  protected $table = 'equipamentos';
 }

@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('registro/store', 'RegistrosController@store');
+Route::post('equipamento/store', 'EquipamentosController@store');
+Route::get('registro/index', 'RegistrosController@index');
+Route::get('equipamento/index', 'EquipamentosController@index');
