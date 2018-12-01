@@ -13,12 +13,15 @@ class RegistrosController extends Controller
          return view('indexRegistros',compact("registros"));
      }
 
-  public function store(Registros $request)
+
+
+  public function store(Request $request)
   {
       $registro = new Registros;
       $registro->equipamento_id  = $request->equipamento_id;
       $registro->descricao       = $request->descricao;
       $registro->tipo            = $request->tipo;
+      $registro->datalimite      = $request->datalimite;
       $registro->save();
   }
 

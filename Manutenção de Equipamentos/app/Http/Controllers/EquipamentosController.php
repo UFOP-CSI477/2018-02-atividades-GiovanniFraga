@@ -16,11 +16,11 @@ class EquipamentosController extends Controller
 
 
 
-  public function store(Registros $request)
+  public function store(Request $request)
   {
       $equipamentos = new Equipamentos;
       $equipamentos->nome  = $request->nome;
-      $registro->save();
+      $equipamentos->save();
   }
 
 }

@@ -14,8 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('geral', function () {
+    return view('geral');
+});
 
-Route::post('registro/store', 'RegistrosController@store');
-Route::post('equipamento/store', 'EquipamentosController@store');
+Route::get('inserirEquipamentos', function () {
+    return view('inserirEquipamentos');
+});
+Route::post('inserirEquipamentosBd', 'EquipamentosController@store');
+
+
+Route::get('inserirRegistros', function () {
+    return view('inserirRegistros');
+});
+Route::post('inserirRegistrosBd', 'RegistrosController@store');
+
+
 Route::get('registro/index', 'RegistrosController@index');
 Route::get('equipamento/index', 'EquipamentosController@index');
