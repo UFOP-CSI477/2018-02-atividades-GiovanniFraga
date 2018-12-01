@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Equipamentos
+use App\Equipamentos;
 class EquipamentosController extends Controller
 {
 
 
   public function index()
      {
-         $equipamentos = Equipamentos::all());
-         return view('indexEquipamentos',['equipamento' => $equipamentos]);
+         $equipamentos = Equipamentos::all();
+         return view('indexEquipamentos',compact("equipamentos"));
      }
 
 

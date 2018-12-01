@@ -9,8 +9,8 @@ class RegistrosController extends Controller
 
   public function index()
      {
-         $registro = Registros::orderBy('datalimite', 'asc')->paginate(10);
-         return view('indexRegistros',['registro' =>'oi']);
+         $registros = Registros::orderBy('datalimite', 'asc')->paginate(10);
+         return view('indexRegistros',compact("registros"));
      }
 
   public function store(Registros $request)
