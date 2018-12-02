@@ -8,7 +8,7 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
   <!-- Styles -->
   <style>
   html, body {
@@ -19,10 +19,6 @@
     height: 100vh;
     margin: 0;
   }
-
-
-
-
 
   .full-height {
     height: 100vh;
@@ -85,28 +81,23 @@
       </div>
 
 
-      <form action = "inserirEquipamentosBd" method = "post">
-         <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
+      <form class="form-horizontal" action = "inserirEquipamentosBd" method = "post">
+        <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
 
+        <div class="form-group">
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name = "nome" id="nome" placeholder="Nome do Equipamento">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <input type = "submit" class="btn btn-default" value = "Cadastrar" />
+          </div>
+        </div>
 
-
-         <table>
-           <tr>
-             <td><label for="text" >Nome</label></td>
-             <td><input type="text" class="form-control" name = "nome" id="nome" ></td>
-             <td><input type = "submit" class=" btn btn-primary mb-2" value = "Cadastrar" /></td>
-           </tr>
-         </table>
-
-
-
-  </div>
-
+      </div>
 
     </div>
-
-
-
 
   </div>
 </body>

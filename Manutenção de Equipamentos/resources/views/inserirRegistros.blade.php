@@ -8,7 +8,7 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
   <!-- Styles -->
   <style>
   html, body {
@@ -85,43 +85,42 @@
       </div>
 
 
-      <form action = "inserirRegistrosBd" method = "post">
-         <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
+      <form class="form-horizontal"  action = "inserirRegistrosBd" method = "post">
+        <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
 
 
-         <table>
+        <div class="form-group">
+          <!-- <label class="control-label col-sm-2" for="text" >Nome</label> -->
+          <div class="col-sm-10">
+            <input type="number" class="form-control" name = "equipamento_id"  placeholder="Id do Equipamento">
+          </div>
+        </div>
+        <div class="form-group">
+          <!-- <label class="control-label col-sm-2" for="text" >Nome</label> -->
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name = "descricao" placeholder="Descrição do Equipamento">
+          </div>
+        </div>
+        <div class="form-group">
+          <!-- <label class="control-label col-sm-2" for="text" >Nome</label> -->
+          <div class="col-sm-10">
+            <input type="date" class="form-control" name = "datalimite" placeholder="Data Limite">
+          </div>
+        </div>
+        <div class="form-group">
+          <!-- <label class="control-label col-sm-2" for="text" >Nome</label> -->
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name = "tipo" placeholder="Tipo de Equipamento (1-Preventiva; 2-Corretiva; 3-Urgente)">
+          </div>
+        </div>
 
-            <tr>
-              <td>Equipamento Id</td>
-              <td><input type = "number" name = "equipamento_id" /></td>
-            </tr>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <input type = "submit" class="btn btn-default" value = "Cadastrar" />
+          </div>
+        </div>
 
-            <tr>
-               <td>Descrição</td>
-               <td><input type = "text" name = "descricao" /></td>
-            </tr>
-            <tr>
-               <td>Data Limite</td>
-               <td><input type = "date" name = "datalimite" /></td>
-            </tr>
-            <tr>
-               <td>Tipo(1-Preventiva; 2-Corretiva; 3-Urgente)</td>
-               <td><input type = "number" name = "tipo" /></td>
-            </tr>
-
-              <tr>
-               <td colspan = "2" align = "center">
-                  <input href="indexRegistros" type = "submit" value = "InserirEquipamentos" />
-               </td>
-            </tr>
-         </table>
-
-
-
-
-  </div>
-
-
+      </div>
     </div>
 
 

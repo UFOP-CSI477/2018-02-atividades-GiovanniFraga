@@ -8,7 +8,7 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
   <!-- Styles -->
   <style>
   html, body {
@@ -21,7 +21,13 @@
   }
 
 
-
+  input[type=text] {
+      background-color: white;
+      background-image: url('searchicon.png');
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding-left: 5px;
+  }
 
 
   .full-height {
@@ -86,28 +92,20 @@
 
 
       <form action = "pesquisaRegistrosBd" method = "get">
-         <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
+        <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
 
-
-         <table>
-            <tr>
-               <td>Id do Equipamento</td>
-               <td><input type = "number" name = "equipamento_id" /></td>
-            </tr>
-
-
-              <tr>
-
-               <td colspan = "2" align = "center">
-                  <input type = "submit" value = "PesquisaRegistros" />
-               </td>
-            </tr>
-         </table>
-
-
-
-
-  </div>
+        <div class="form-group">
+          <!-- <label class="control-label col-sm-2" for="text" >Nome</label> -->
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name = "equipamento_id" placeholder="Id do Equipamento">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <input type = "submit" class="btn btn-default" value = "Pesquisar" />
+          </div>
+        </div>
+      </div>
 
 
     </div>
